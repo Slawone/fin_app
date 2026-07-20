@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мои финансы</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <a href="/">Логотип</a>
-        <nav>
-          <ul>
-            <li><a href="#">Обзор</a></li>
-            <li><a href="#">Транзакции</a></li>
-            <li><a href="#">Аналитика</a></li>
-            <li><a href="#">Счета</a></li>
-            <li><a href="#">Кошелёк</a></li>
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="/">Логотип</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Обзор</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Транзакции</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Аналитика</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Счета</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Кошелёк</a></li>
           </ul>
         </nav>
-        <div>
-          <button>⚙</button>
-          <button>🔔</button>
-          <button>👤</button>
+        <div class="header__actions">
+          <button class="header__action">⚙</button>
+          <button class="header__action">🔔</button>
+          <button class="header__action">👤</button>
         </div>
       </div>
     </header>

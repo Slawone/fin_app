@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мои финансы</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -44,17 +45,17 @@
         <div class="stats">
           <div class="stat-card">
             <p class="stat-card__label">Баланс</p>
-            <p class="stat-card__value">$5,502.45</p>
+            <p class="stat-card__value" id="balanceValue">$5,502.45</p>
             <p class="stat-card__change stat-card__change--up">+13,1%</p>
           </div>
           <div class="stat-card">
             <p class="stat-card__label">Доходы</p>
-            <p class="stat-card__value">$9,450.00</p>
+            <p class="stat-card__value" id="incomeValue">$9,450.00</p>
             <p class="stat-card__change stat-card__change--up">+3,7%</p>
           </div>
           <div class="stat-card">
             <p class="stat-card__label">Расходы</p>
-            <p class="stat-card__value">$3,945.55</p>
+            <p class="stat-card__value" id="expensesValue">$3,945.55</p>
             <p class="stat-card__change stat-card__change--down">−1,5%</p>
           </div>
         </div>
@@ -129,26 +130,7 @@
                   <th scope="col">Сумма</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>Orlando Rodrigues</td>
-                  <td>Банковский счёт</td>
-                  <td>2024/04/01</td>
-                  <td class="transactions__amount transactions__amount--up">+$750.00</td>
-                </tr>
-                <tr>
-                  <td>Netflix</td>
-                  <td>Кредитная карта</td>
-                  <td>2024/03/29</td>
-                  <td class="transactions__amount transactions__amount--down">-$9.90</td>
-                </tr>
-                <tr>
-                  <td>Spotify</td>
-                  <td>Кредитная карта</td>
-                  <td>2024/03/29</td>
-                  <td class="transactions__amount transactions__amount--down">-$19.90</td>
-                </tr>
-              </tbody>
+              <tbody class="transactions__body"></tbody>
             </table>
           </div>
         </section>

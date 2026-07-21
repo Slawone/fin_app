@@ -27,14 +27,14 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Привет, Вячеслав!</h1>
-        <div>
-          <button>Этот месяц</button>
-          <button>Прошлый месяц</button>
-          <button>Этот год</button>
-          <button>Последние 12 мес.</button>
-          <button>Выбрать период</button>
+      <section class="page-header">
+        <h1 class="page-header__title">Привет, Вячеслав!</h1>
+        <div class="periods">
+          <button class="periods__button periods__button--active">Этот месяц</button>
+          <button class="periods__button">Прошлый месяц</button>
+          <button class="periods__button">Этот год</button>
+          <button class="periods__button">Последние 12 мес.</button>
+          <button class="periods__button">Выбрать период</button>
         </div>
       </section>
       <section>
@@ -116,36 +116,38 @@
         <section class="transactions">
           <h2 class="transactions__title">Последние транзакции</h2>
           <p class="transactions__subtitle">История последних транзакций</p>
-          <table class="transactions__table">
-            <thead>
-              <tr>
-                <th scope="col">Описание</th>
-                <th scope="col">Способ</th>
-                <th scope="col">Дата</th>
-                <th scope="col">Сумма</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Orlando Rodrigues</td>
-                <td>Банковский счёт</td>
-                <td>2024/04/01</td>
-                <td class="transactions__amount transactions__amount--up">+$750.00</td>
-              </tr>
-              <tr>
-                <td>Netflix</td>
-                <td>Кредитная карта</td>
-                <td>2024/03/29</td>
-                <td class="transactions__amount transactions__amount--up">-$9.90</td>
-              </tr>
-              <tr>
-                <td>Spotify</td>
-                <td>Кредитная карта</td>
-                <td>2024/03/29</td>
-                <td class="transactions__amount transactions__amount--down">-$19.90</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="transactions__scroll">
+            <table class="transactions__table">
+              <thead>
+                <tr>
+                  <th scope="col">Описание</th>
+                  <th scope="col">Способ</th>
+                  <th scope="col">Дата</th>
+                  <th scope="col">Сумма</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Orlando Rodrigues</td>
+                  <td>Банковский счёт</td>
+                  <td>2024/04/01</td>
+                  <td class="transactions__amount transactions__amount--up">+$750.00</td>
+                </tr>
+                <tr>
+                  <td>Netflix</td>
+                  <td>Кредитная карта</td>
+                  <td>2024/03/29</td>
+                  <td class="transactions__amount transactions__amount--down">-$9.90</td>
+                </tr>
+                <tr>
+                  <td>Spotify</td>
+                  <td>Кредитная карта</td>
+                  <td>2024/03/29</td>
+                  <td class="transactions__amount transactions__amount--down">-$19.90</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
       </div>
     </main>

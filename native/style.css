@@ -93,6 +93,9 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .stats {
@@ -181,4 +184,124 @@ main {
 .action-card__subtitle {
   color: #6b7280;
   font-size: 14px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.expenses {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.expenses__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.expenses__chart {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  border: 1px dashed #d1d5db;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend__color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend__item:nth-child(1) .legend__color {
+  background-color: #6366f1;
+}
+
+.legend__item:nth-child(2) .legend__color {
+  background-color: #ef4444;
+}
+
+.legend__item:nth-child(3) .legend__color {
+  background-color: #3b82f6;
+}
+
+.legend__item:nth-child(4) .legend__color {
+  background-color: #22c55e;
+}
+
+.legend__item:nth-child(5) .legend__color {
+  background-color: #a855f7;
+}
+
+.legend__percent {
+  margin-left: auto;
+}
+
+.transactions {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  grid-column: span 2;
+}
+
+.transactions__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.transactions__subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.transactions__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions__table th {
+  text-align: left;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.transactions__table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transactions__amount {
+  font-weight: 600;
+}
+
+.transactions__amount--up {
+  color: #16a34a;
+}
+
+.transactions__amount--down {
+  color: #dc2626;
 }

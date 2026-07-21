@@ -95,3 +95,63 @@ periodButtons.forEach(button => {
     button.classList.add('periods__button--active')
   })
 })
+
+const categories = [
+  {
+    name: 'Жильё',
+    amount: 1500,
+    color: '#6366f1',
+  },
+  {
+    name: 'Кредитная карта',
+    amount: 750,
+    color: '#ef4444',
+  },
+  {
+    name: 'Транспорт',
+    amount: 190,
+    color: '#3b82f6',
+  },
+  {
+    name: 'Продукты',
+    amount: 220,
+    color: '#22c55e',
+  },
+  {
+    name: 'Покупки',
+    amount: 50,
+    color: '#a855f7',
+  },
+];
+
+const total = sumAmounts(categories);
+
+const legendList = document.querySelector('.legend');
+
+legendList.innerHTML = categories.map(category => {
+    return `
+      <li class="legend__item">
+        <span class="legend__color" style="background-color: ${category.color}"></span>
+        <span class="legend__name">${category.name}</span>
+        <span class="legend__percent">${
+          (category.amount / total * 100).toFixed(2)
+        }%</span>
+      </li>
+    `
+  }).join('');
+
+  let start = 0;
+
+  const conicGradient = categories.map(category => {
+    const pct = category.amount / total * 100;
+    const segment = `${category.color} ${start}% ${start + pct}%`;
+    start += pct;
+    return segment;
+  }).join(', ');
+
+  const gradient = `conic-gradient(${conicGradient})`;  
+
+  const expensesChart = document.querySelector('.expenses__chart');
+
+  expensesChart.style.background = gradient;
+  

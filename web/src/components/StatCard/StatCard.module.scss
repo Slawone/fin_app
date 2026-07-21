@@ -1,0 +1,30 @@
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.change {
+  font-size: 14px;
+}
+
+.up {
+  color: var(--color-up);
+}
+
+.down {
+  color: var(--color-down);
+}

@@ -1,0 +1,28 @@
+.main {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-md);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-md);
+
+  button {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.card {
+  border: none;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-md);
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color-bg);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  font-size: 14px;
+}

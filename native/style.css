@@ -21,7 +21,7 @@ button {
 }
 
 body {
-  background-color: #f4f5f7;
+  background-color: #e7e7e9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
   color: #1a1a2e;
@@ -87,4 +87,48 @@ body {
 
 .header__action:hover {
   background-color: #e5e7eb;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-card__label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.stat-card__value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-card__change {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stat-card__change--up {
+  color: #16a34a;
+}
+
+.stat-card__change--down {
+  color: #dc2626;
 }

@@ -84,3 +84,14 @@ const expensesValue = document.getElementById('expensesValue');
 balanceValue.textContent = formatMoney(balance);
 incomeValue.textContent = formatMoney(income);
 expensesValue.textContent = formatMoney(expenses);
+
+const periodButtons = document.querySelectorAll('.periods__button');
+
+periodButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    periodButtons.forEach(btn => {
+      btn.classList.remove('periods__button--active');
+    })
+    button.classList.add('periods__button--active')
+  })
+})

@@ -22,10 +22,6 @@ const navItems = [
     href: '/accounts',
     label: 'Счета',
   },
-  {
-    href: '/wallet',
-    label: 'Кошелёк',
-  },
 ];
 
 export const Topbar = () => {

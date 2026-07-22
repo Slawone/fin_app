@@ -54,11 +54,7 @@
 
 .actions {
   display: flex;
-  gap: var(--space-md);
-
-  @media (max-width: 900px) {
-    gap: var(--space-sm);
-  }
+  gap: var(--space-sm);
 }
 
 .action {

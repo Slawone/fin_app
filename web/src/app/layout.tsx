@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Topbar } from "@/components";
+import { Topbar, TransactionsLoader } from "@/components";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <Topbar />
+        <TransactionsLoader />
         {children}
       </body>
     </html>

@@ -1,0 +1,53 @@
+.transactions {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: left;
+    padding: 12px;
+    white-space: nowrap;
+  }
+
+  th {
+    color: var(--color-muted);
+    font-size: 14px;
+  }
+
+  td {
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.amountUp {
+  color: var(--color-up);
+}
+
+.amountDown {
+  color: var(--color-down);
+}

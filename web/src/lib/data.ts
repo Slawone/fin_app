@@ -1,0 +1,76 @@
+import type { Transaction, Category } from "./types";
+
+export const transactions: Transaction[] = [
+  { 
+    id: 1,
+    description: "Netflix",
+    method: "Кредитная карта",
+    date: "2024-03-29",
+    amount: -9.9,
+  },
+  { id: 2,
+    description: "Orlando Rodrigues",
+    method: "Банковский счёт",
+    date: "2024-04-01",
+    amount: 750,
+  },
+  { 
+    id: 3,
+    description: "Spotify",
+    method: "Кредитная карта",
+    date: "2024-03-29",
+    amount: -19.9,
+  },
+  { id: 4,
+    description: "Carl Andrew",
+    method: "Банковский счёт",
+    date: "2024-03-27",
+    amount: 400,
+  },
+  { id: 5,
+    description: "Carrefour Market",
+    method: "Кредитная карта",
+    date: "2024-03-26",
+    amount: -64.33,
+  },
+  { id: 6,
+    description: "Amazon",
+    method: "Кредитная карта",
+    date: "2024-03-24",
+    amount: -147.9,
+  },
+  { id: 7,
+    description: "Shopify",
+    method: "Кредитная карта",
+    date: "2024-03-21",
+    amount: -57.98,
+  },
+];
+
+export const categories: Category[] = [
+  {
+    name: 'Жильё',
+    amount: 1500,
+    color: '#6366f1',
+  },
+  {
+    name: 'Кредитная карта',
+    amount: 750,
+    color: '#ef4444',
+  },
+  {
+    name: 'Транспорт',
+    amount: 190,
+    color: '#3b82f6',
+  },
+  {
+    name: 'Продукты',
+    amount: 220,
+    color: '#22c55e',
+  },
+  {
+    name: 'Покупки',
+    amount: 50,
+    color: '#a855f7',
+  },
+];

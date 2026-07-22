@@ -1,8 +1,12 @@
-import { transactions } from "@/lib/data";
+"use client";
+
+import { useTransactionsStore } from "@/store/useTransactionsStore";
 import { formatMoney } from "@/lib/format";
 import styles from "./TransactionList.module.scss";
 
 export const TransactionList = () => {
+  const transactions = useTransactionsStore((store) => store.transactions);
+
   return (
     <section className={styles.transactions}>
       <h2 className={styles.title}>Последние транзакции</h2>

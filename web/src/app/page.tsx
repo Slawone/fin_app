@@ -1,5 +1,5 @@
 import { Plus, Minus, ArrowLeftRight } from "lucide-react";
-import { ActionCard, StatCard, TransactionList } from "@/components";
+import { ActionCard, Chart, StatCard, TransactionList } from "@/components";
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -19,7 +19,10 @@ export default function Home() {
           <ActionCard icon={ArrowLeftRight} title="Перевод" subtitle="Выбрать сумму и перевести" />
         </div>
       </section>
-      <TransactionList />
+      <section className={styles.bottom}>
+        <Chart />
+        <TransactionList />
+      </section>
     </main>
   );
 }

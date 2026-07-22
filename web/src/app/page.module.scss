@@ -26,3 +26,22 @@
     flex-grow: 1;
   }
 }
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+
+  & > section:last-child {
+    grid-column: span 2;
+    min-width: 0;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+
+    & > section:last-child {
+      grid-column: auto;
+    }
+  }
+}
